@@ -1,4 +1,5 @@
 let menuSection = document.querySelectorAll("menu li");
+let leftborder = document.querySelector(".border-left");
 
 // for clickable event
 menuSection.forEach((v) => {
@@ -22,4 +23,9 @@ window.onscroll = () => {
       menuSection[i].classList.add("active");
     }
   });
+
+  let top = window.scrollY;
+  if (top > 108) {
+    leftborder.style.top = `${top / 3.1}px`;
+  }
 };

@@ -33,14 +33,21 @@ body menu ul {
 }
 body menu ul li {
   transition: 0.3s;
-  padding: 0.5rem;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom: 5px;
   border-left: 2px solid transparent;
 }
-body menu ul li.active {
-  border-left: 2px solid #fff;
-  transition: 0.3s;
-  color: white;
+body menu ul li:nth-child(2) {
+  padding-top: 10px;
 }
+body menu ul li:nth-child(2) {
+  padding-top: 31px;
+}
+body menu ul li:nth-child(3) {
+  padding-top: 52px;
+}
+
 body menu ul li.active a {
   color: white;
 }
@@ -48,12 +55,18 @@ body menu ul li a {
   color: rgba(255, 255, 255, 0.795);
   text-decoration: none;
 }
+
+body menu ul li a h1,
+body menu ul li a p {
+  padding: 10px 0 0 0;
+}
 body menu ul li h1 {
   font-size: 20px;
   margin: 0;
 }
 body menu ul li p {
   font-size: 14px;
+  margin: 0;
 }
 
 body main {
@@ -68,4 +81,15 @@ img {
   max-width: 100%;
   min-height: 90vh;
   margin-top: 50px;
+}
+
+.border-left {
+  border-left: 2px solid #fff;
+  transition: 0.3s;
+  color: white;
+  position: fixed;
+  height: 160px;
+  top: 32px;
+  left: 20px;
+  z-index: 20;
 }
